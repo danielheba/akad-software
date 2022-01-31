@@ -1,0 +1,125 @@
+* { box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+     font-size: 62.5%; /* 10px */
+     scroll-behavior: smooth; /* przynne przejscie */
+}
+
+body {font-family: 'Roboto', sans-serif;
+      font-size: 1.6rem;
+}
+
+.hero-shadow {
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    z-index: -1;
+}
+
+
+/* NAGŁÓWEK i NAWIGACJA */
+
+.navbar-brand {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.fontsizeplus {
+    font-size: 3.2rem;
+}
+
+div.letter_akad
+{
+    position: relative;
+    margin: 0;
+    text-align: center;
+    float:left;
+    transform: rotateY(-90deg);
+    
+}
+
+div.letter_A1
+{
+    animation: logoA1 15s ease 1s infinite alternate;
+}
+div.letter_K
+{
+    animation: logoK 15s ease 1s infinite alternate;
+        
+}
+div.letter_A2
+{
+    animation: logoA2 15s ease 1s infinite alternate;
+}
+div.letter_D
+{
+    animation: logoD 15s ease 1s infinite alternate;
+}
+
+@keyframes logoA1 { 0% {} 10% { transform: rotateY(0deg);} 100% { transform: rotateY(0deg);}}
+@keyframes logoK { 0% {transform: rotateY(-90deg);} 5% { transform: rotateY(-90deg);} 15% { transform: rotateY(0deg);} 100% { transform: rotateY(0deg);}}
+@keyframes logoA2 { 0% {transform: rotateY(-90deg);} 10% { transform: rotateY(-90deg);} 20% { transform: rotateY(0deg);} 100% { transform: rotateY(0deg);}}
+@keyframes logoD { 0% {transform: rotateY(-90deg);} 15% { transform: rotateY(-90deg);} 25% { transform: rotateY(0deg);} 100% { transform: rotateY(0deg);}}
+
+div.slogan_text
+{
+    margin: 0px 0px;
+    color:cadetblue;
+    opacity: 0;
+    animation: slogan 15s ease 5s infinite alternate;
+}
+@keyframes slogan { 0% {opacity: 0;}  30% {opacity: 1;} 90% {opacity: 1;} 100% { opacity: 0;}}
+
+
+nav .navbar-nav {
+    font-size: 1.6rem;
+}
+
+
+/* TREŚĆ */
+section.home {
+    position: relative;
+    height: 60rem;
+    background-image: url(./img/klawiatura.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.home .home-text {
+    font-size: 2.2rem;
+}
+
+.home .btn {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+}
+
+.aboutus, .contact {
+    background-color: #eee;
+}
+
+.aboutus .card-img, .contact .card-img {height: 50rem; 
+                    /* object-fit: cover; */
+                    }
+.aboutus .card-text { 
+    background-color: #eee; opacity: 0.7;
+}
+
+
+.akadfooter {
+    background-color: rgba(245,245,245,.3);
+}
+.akadfooter p
+{
+    line-height: 25px;
+    color: #aaa;
+}
+.akadfooter a
+{
+    color: #aaa;
+}
